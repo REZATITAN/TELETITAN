@@ -376,16 +376,13 @@ For Admins :
 you can Create group with this comman
 ساخت یک گروه جدید
 
-
 !lock member
 For locking Inviting user
 برای جلوگیری از آمدن اعضای جدید
 
-
 !lock bots
 for Locking Bots invitation
 برای جلوگیری از اضافه کرن ربات به گروه
-
 
 !lock name 
 To lock the group name for every bodey
