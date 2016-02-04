@@ -243,7 +243,7 @@ function create_config( )
     disabled_channels = {},
     realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
-    about_text = [[TELETITAN 2.3
+    about_text = [[TELETITAN 2.5
      
     this bot is made by : @REZATITAN
    〰〰〰〰〰〰〰〰
