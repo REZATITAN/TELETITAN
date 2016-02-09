@@ -222,7 +222,7 @@ function create_config( )
     "calc",
     "bin",
     "tagall",
-    "text",
+    "text_to_image",
     "info",
     "bot_on_off",
     "welcome",
@@ -244,7 +244,7 @@ function create_config( )
     disabled_channels = {},
     realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
-    about_text = [[PowerTG 1.7
+    about_text = [[TeleTitan 1.7
      
     Sudo admin : @REZATITAN
     --------
@@ -339,201 +339,130 @@ You Can user both "!" & "/" for them
 
 ]],
     help_text = [[
-TeleTitan bots Help for mods : Plugins
+📓Commands list :
 
-Banhammer : 
+!kick [username|id]
+🚫 You can also do it by reply
 
+!ban [username|id]
+🔒 You can also do it by reply 
 
-Help For Banhammer دستوراتی برای کنترل گروه
-
-
-!Kick @UserName or ID or replay
-حذف یک شخص از گروه
-
-!Ban @UserName or ID or replay
-تحریم یک شخص از گروه
-
-!Unban @UserName
-حذف تحریم یک شخص از گروه
-
-
-For Admins :
-
-
-!banall [ID] or replay
-تحریم جهانی یک شخص
-
-!unbanall ID
-حذف تحریم جهانی یک شخص
-
-〰〰〰〰〰〰〰〰〰〰
-2. GroupManager :
-
-!lock leave
-با فعال کردن این دستور اگر کسی از گروه برود از گروه تحریم میشود
-
-!lock tag
-مجوز ندادن به اعضا از استفاده کردن از @ و # برای تگ
-
-!creategroup "GroupName"
-you can Create group with this comman
-ساخت یک گروه جدید
-
-!lock member
-For locking Inviting user
-برای جلوگیری از آمدن اعضای جدید
-
-!lock bots
-for Locking Bots invitation
-برای جلوگیری از اضافه کرن ربات به گروه
-
-!lock name 
-To lock the group name for every bodey
-قفل کردن نام گروه
-
-!setflood
-set the group flood control
-تنظیم حساسیت ربات برای تشخیص اسپم
-
-!settings
-Watch group settings
-نمایش تنظیمات گروه
-
-!owner
-watch group owner
-نمایش ای دی مدیر اصلی گروه
-
-!setowner user_id or replay
-You can set someone to the group owner‼️
-تعیین مدیر اصلی برای گروه
-
-!modlist
-Watch Group mods
-نمایش لیست مدیران گروه
-
-!lock join 
-to lock joining the group by link
-برای جلوگیری از وارد شدن به گروه با لینک گروه
-
-!lock flood
-lock group flood
-فعال کردن تشخیص اسپم ربات
-
-!unlock (bots-member-flood-photo-name-tag-link-join-Arabic)✅
-Unlock Something
-ازاد سازی موارد بالا با این دستور
-
-!rules & !set rules [text]
-TO see group rules or set rules
-نمایش قوانین گروه یا تنظیم قوانین گروه
-
-!about & !set about [text]
-watch about group or set about
-نمایش متنی درباره گروه یا تنظیم متنی درباره گروه
-
-!res @username
-see Username INfo
-دیدن اطلاعات یک شخص
+!unban [id]
+🔓 You can also do it by replay
 
 !who
-Get Ids Chat
-لیست ایدی های اعضای گروه
+📋 Members list
 
-!log 
-get members id 
-نمایش تمامی فعالیت های انجام یافته توسط شما و یا مدیران
+!modlist
+👥 Moderators list
 
-!all
-Says every thing he knows about a group
-نمایش تمامی اطلاعات ثبت شده در مورد گروه
+!promote [username]
+👤 Promote someone
+
+!demote [username]
+⛓ Demote someone 
+
+!kickme
+❌ Will kick user
+
+!about
+🗒 Group description
+
+!setphoto
+🏖 Set and locks group photo
+
+!setname [name]
+📌 Set group name 
+
+!rules
+📃 Group rules
+
+!id
+🆔 return group id or user id
+
+!help
+📋 help for bot commands
+
+!lock [member|name|bots|leave|link|tag|flood|arabic|and more]
+🔒 Locks [member|name|bots|link|tag|leaveing|flood|arabic|and more]
+
+!unlock [member|name|bots|leave|link|tag|flood|arabic|and more] 
+🔓 Unlocks [member|name|bots|leaving|link|tag|flood|arabic|and more] 
+
+!set rules <text>
+📋 Set <text> as rules
+
+!set about <text>
+📄 Set <text> as about 
+
+!settings
+⚙ Returns group settings 
 
 !newlink
-Changes or Makes new group link
-عوض کردن لینک گروه
-
+🔃 create/revoke your group link 
 !link
-gets The Group link
-نمایش لینک گروه
+📌 returns group link 
 
-!linkpv
-sends the group link to the PV
-ارسال لینک توسط ربات در پی وی
-〰〰〰〰〰〰〰〰
-Admins :
+!owner
+👤 returns group owner id 
 
+!setowner [id]
+👑 Will set id as owner 
 
-!add
-to add the group as knows
-مجوز دادن به ربات برای استفاده در گروه
-
-!rem
-to remove the group and be unknown
-ناشناس کردن گروه برای ربات
-
-!setgpowner (Gpid) user_id 
-For Set a Owner of group from realm
-تعیین مدیر اصلی برای ان گروه
-
-!addadmin [Username]
-to add a Global admin to the bot
-اضافه کردن ادمین اصلی برای ربات
-
-
-!removeadmin [username]
-to remove an admin from global admins
-برای صلب مقام یک ادمین اصلی
-
-
-!plugins - [pluginName]
-To Disable the plugin
-برای غیر فعال کردن پلاگین 
-
-
-!plugins + [pluginName]
-To enable a plugins
-برای فعال کردن پلاگین
-
-!plugins ?
-To reload al plugins
-تازه سازی تمامی پلاگین های فعال
-
-!plugins
-Shows the list of all plugins
-لیست تمامی پلاگین ها
-
-!sms [id] (text)
-To send a message to an account by his/her ID
-برای فرستادن متنی توسط ربات به یک شخص
-〰〰〰〰〰〰〰〰〰〰〰
-3. Stats :
-
-
-!stats teletitan (sudoers)✔️
-To see the stats of bot
-برای دیدن آمار ربات 
+!setflood [value]
+🚫 Set [value] as flood sensitivity 
 
 !stats
-To see the group stats
-برای دیدن آمار گروه 
-〰〰〰〰〰〰〰〰
-4. Feedback
+📊 Simple message statistics
 
-!feedback (text)
-To send your ideas to the Sudo
-ارسال نظر و پیشنهاد شما برای مدیر اصلی ربات
-〰〰〰〰〰〰〰〰〰〰〰
-5. Tagall
+!save [value] <text>
+📝 Save <text> as [value] 
 
-!tagall (text)
-To tags the every one and sends your message at bottom
-تگ کردن همه ی اعضای گروه و نوشتن متن شما زیر تگ ها
-〰〰〰〰〰〰〰〰〰
-Master Admin : @REZATITAN
+!get [value]
+💭 Returns text of [value] 
+
+!clean 
+[modlist|rules|about|member]
+🗑 Will clear [modlist|rules|about_member] and set it to nil 
+
+!res [username]
+👤 returns user id 
+
+!log
+🗞 will return group logs 
+
+!banlist
+🗒 will return group ban list 
+
+!linkpv
+💬 send link of group to your pv 
+
+!filter +|- [word]
+⛔️ block|unblock words
+
+!filterlist
+🚫 show filter words
+
+!info
+👁‍🗨 show user's info
+
+!feedback [pm]
+📞 Contact Us
+
+➖➖➖➖➖➖
+
+🔸U can use both "/" and "!" 
+
+🔸Only owner and mods can add bots in group
+
+🔸Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
+
+🔸Only owner can use res,setowner,promote,demote and log commands
+
+➖➖➖➖➖➖
+
+sudo admin : @‌RezaTitan
 our channel : @TeleTitanChannel
-
-
-You Can user both "!" & "/" for them
-می توانید از دو کاراکتر !  و / برای دادن دستورات استفاده کنید
 
 ]]
 
