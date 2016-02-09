@@ -10,11 +10,14 @@ local function run(msg, matches)
   file:write(text)
   file:flush()
   file:close()
-  return "done!" end return {
+  if not is_sudo(msg) then 
+return "for Sudo only!"
+end
+   end {
   description = "a Usefull plugin for sudo !",
   usage = "A plugins to add Another plugins to the server",
   patterns = {
-    "^!addplugin +(.+) (.*) (.*)$"
+    "^addplugin +(.+) (.*) (.*)$"
   },
   run = run
 }
