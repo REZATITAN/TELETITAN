@@ -216,6 +216,7 @@ function create_config( )
     "antilink",
     "antitag",
     "gps",
+    "addplugin",
     "auto_leave",
     "cpu",
     "calc",
@@ -239,13 +240,15 @@ function create_config( )
     "all",
     "leave_ban"
     },
-    sudo_users = {118682430},--Sudo users
+    sudo_users = {100473027},--Sudo users
     disabled_channels = {},
     realm = {},--Realms Id
     moderation = {data = 'data/moderation.json'},
-    about_text = [[TELETITAN 2.5
+    about_text = [[PowerTG 1.7
      
-    this bot is made by : @REZATITAN
+    Sudo admin : @REZATITAN
+    --------
+    our channel : @TeleTitanChannel
    〰〰〰〰〰〰〰〰
   ♻️ You can send your Ideas and messages to Us By sending them into bots account by this command :
    تمامی درخواست ها و نظراتتونو با دستور زیر برای ما ارسال کنید
