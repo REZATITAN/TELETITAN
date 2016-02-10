@@ -339,8 +339,8 @@ You Can user both "!" & "/" for them
 
 ]],
     help_text = [[
-📓Commands list :
-
+📓 Commands list :
+ 
 !kick [username|id]
 🚫 You can also do it by reply
 
@@ -356,10 +356,10 @@ You Can user both "!" & "/" for them
 !modlist
 👥 Moderators list
 
-!promote [username]
+!promote [username or replay]
 👤 Promote someone
 
-!demote [username]
+!demote [username or replay]
 ⛓ Demote someone 
 
 !kickme
@@ -456,17 +456,26 @@ You Can user both "!" & "/" for them
 !tti [text]
 🔃 Convert text to image
 
-➖➖➖➖➖➖
+!calc [expression]
+📟 Calculator
+
+!google [terms]
+🔎 Searche in Google and send results
+
+!tagall [message]
+👥 Will tag all members with a message
+
+➖➖➖➖➖➖➖➖
 
 🔸U can use both "/" and "!" 
 
 🔸Only owner and mods can add bots in group
 
-🔸Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,set about and settings commands
+🔸Only moderators and owner can use kick,ban,unban,newlink,link,setphoto,setname,lock,unlock,set rules,tagall,link pv,filter word,set about and settings commands
 
 🔸Only owner can use res,setowner,promote,demote and log commands
 
-➖➖➖➖➖➖
+➖➖➖➖➖➖➖➖
 
 sudo admin : @‌RezaTitan
 our channel : @TeleTitanChannel
