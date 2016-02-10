@@ -216,6 +216,8 @@ function create_config( )
     "antilink",
     "antitag",
     "gps",
+    "Echoall",
+    "spammer",
     "addplugin",
     "auto_leave",
     "cpu",
@@ -451,6 +453,9 @@ You Can user both "!" & "/" for them
 !filterlist
 🚫 show filter words
 
+!rall
+❌ Remove all filter words
+
 !info
 👁‍🗨 show user's info
 
@@ -460,7 +465,7 @@ You Can user both "!" & "/" for them
 !webshot [url]
 📷 Send an screenshot of a website
 
-!tti [text]
+!tti [text] & !nas [text]
 🔃 Convert text to image
 
 !calc [expression]
@@ -484,7 +489,7 @@ You Can user both "!" & "/" for them
 
 ➖➖➖➖➖➖➖➖
 
-sudo admin : @‌RezaTitan
+sudo admin : @‌REZATITAN
 our channel : @TeleTitanChannel
 
 ]]
