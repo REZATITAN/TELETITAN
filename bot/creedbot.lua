@@ -450,6 +450,12 @@ You Can user both "!" & "/" for them
 !feedback [pm]
 📞 Contact Us
 
+!webshot [url]
+📷 Send an screenshot of a website
+
+!tti [text]
+🔃 Convert text to photo
+
 ➖➖➖➖➖➖
 
 🔸U can use both "/" and "!" 
