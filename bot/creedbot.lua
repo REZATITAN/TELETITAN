@@ -454,7 +454,7 @@ You Can user both "!" & "/" for them
 📷 Send an screenshot of a website
 
 !tti [text]
-🔃 Convert text to photo
+🔃 Convert text to image
 
 ➖➖➖➖➖➖
 
