@@ -216,7 +216,6 @@ function create_config( )
     "antilink",
     "antitag",
     "gps",
-    "Echoall",
     "spammer",
     "addplugin",
     "auto_leave",
