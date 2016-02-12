@@ -439,7 +439,8 @@ function run(msg, matches)
     --vardump(msg)
    	local name_log = user_print_name(msg.from)
        if matches[1] == 'log' and is_owner(msg) then
-		savelog(msg.to.id, "log file created by owner")
+		savelog(msg.to.id, "log file created by 
+owner")
 		send_document("chat#id"..msg.to.id,"./groups/"..msg.to.id.."log.txt", ok_cb, false)
         end
 
